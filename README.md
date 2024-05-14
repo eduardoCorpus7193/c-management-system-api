@@ -1,3 +1,10 @@
+# profile-z
+
+This profile was created specifically to evaluate the skills developed in subsequent frontend development courses during the web development course taught by a professor representing the liaison between the company NTT DATA MEXICO and the university where I study.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
