@@ -1,25 +1,19 @@
-import logo from './logo.svg';
+import AppHeader from './components/header.jsx';
+import AppFooter from './components/footer.jsx';
+import AppBody from './components/index.jsx';
+/*import StudentCard from './components/StudentCard.jsx'; -> <StudentCard name={"Jose Lopez"} level={"6B Dual"} career={"Ing. en Sistemas"}/>*/
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+        <AppHeader />
+        <AppBody />
+        
+        <AppFooter />
+      </>
   );
 }
 
 export default App;
+
