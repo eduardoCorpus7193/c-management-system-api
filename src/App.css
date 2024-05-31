@@ -2,11 +2,17 @@
 /**/
 
 /* HEADER */
+
+/*.navbar-custom {
+  background-color: #0084df !important;
+}*/
+
 #navbar {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
+  
 }
 
 .logotype {
@@ -44,6 +50,10 @@
   font-family: "Playfair Display", serif;
 }
 
+.baground {
+  background-color: #0068b4;
+}
+
 #navbarNavDropdown {
   display: flex;
   justify-content: center;
@@ -55,6 +65,8 @@
   color: rgb(199, 0, 57);
   font-weight: bold;
 }
+
+
 
 /* BODY */
 
@@ -96,6 +108,13 @@
   font-size: 12px;
 }
 
+.edit-button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: transparent;
+  border: none;
+}
 
 /* FOOTER */
 /* FOOTER */
@@ -190,4 +209,21 @@ footer {
   transition: all 0.3s ease;
   margin-top: 100px;
   margin-bottom: 100px;
+} 
+
+
+
+
+
+/*
+#input-style {
+  width: 600px !important;
+}*/
+
+.no-outline {
+  outline: none;
+}
+
+.no-outline:focus {
+  outline: none;
 }
