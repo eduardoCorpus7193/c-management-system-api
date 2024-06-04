@@ -3,35 +3,35 @@ module.exports = (sequelize, Sequelize) => {
         "courses_detail",
       {
         id: {
-            type: Sequelize.INTEGER.UNSIGNED,
-            primaryKey: true,
-            autoIncrement: true,
-          },
+          type: Sequelize.INTEGER.UNSIGNED,
+          primaryKey: true,
+          autoIncrement: true,
+        },
         course_id: {
-            type: Sequelize.INTEGER.UNSIGNED,
-            allowNull: false,  
-            unique: false,
-            references: {
-              model: 'course',
-              key: 'id'
-            }
-          },
+          type: Sequelize.INTEGER.UNSIGNED,
+          allowNull: false,  
+          unique: false,
+          references: {
+            model: 'course',
+            key: 'id'
+          }
+        },
         user_id: {
-            type: Sequelize.INTEGER.UNSIGNED,
-            allowNull: false,  
-            unique: false,
-            references: {
-              model: 'user',
-              key: 'id'
-            }
-          },  
+          type: Sequelize.INTEGER.UNSIGNED,
+          allowNull: false,  
+          unique: false,
+          references: {
+            model: 'user',
+            key: 'id'
+          }
+        },
         started_date: {
           type: Sequelize.DATE,
           allowNull: false,
         },
         finished_date: {
-            type: Sequelize.DATE,
-            allowNull: false,
+          type: Sequelize.DATE,
+          allowNull: false,
         },
         is_finished: {
           type: Sequelize.BOOLEAN,
@@ -57,4 +57,3 @@ module.exports = (sequelize, Sequelize) => {
     );
     return Courses_detail;
   };
-  

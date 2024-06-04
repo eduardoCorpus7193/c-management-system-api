@@ -8,16 +8,16 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.INTEGER.UNSIGNED,
             primaryKey: true,
             autoIncrement: true,
-          },
+        },
         user_type_id: {
-            type: Sequelize.INTEGER.UNSIGNED,
-            allowNull: false,  
-            unique: false,
-            references: {
-              model: 'user_type',
-              key: 'id'
-            }
-          },
+          type: Sequelize.INTEGER.UNSIGNED,
+          allowNull: false,  
+          unique: false,
+          references: {
+            model: 'user_type',
+            key: 'id'
+          }
+        },
         user_name: {
           type: Sequelize.STRING,
           allowNull: false,
