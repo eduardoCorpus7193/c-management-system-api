@@ -1,249 +1,26 @@
 import React, { useState } from 'react';
-{/*import StudentCard from './StudentCard';*/}
-
-
-const userCard = [
-    {
-        name: 'Edith Angelica Gonzalez Leos',
-        career: 'Information technologies area multiplatform software development',
-    }
-];
-
-const careerManager = [
-    {
-        name: 'Gerardo Orduna',
-        charge: 'Career Manager',
-        email: 'gerardo.orduna@utma.edu.mx',
-    }
-];
-
-const tutor = [
-    {
-        name: 'Paola Flores',
-        charge: 'Tutor',
-        email: 'paola.flores@utma.edu.mx',
-    }
-];
-const about = [
-    {
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl id ultricies vulputate, nunc ' +
-        'purus tincidunt quam, in aliquet arcu odio ut est. In hac habitasse platea dictumst. Sed nec purus sit ' +
-        'amet lectus aliquet mollis. Nullam auctor, nisl id ultricies vulputate, nunc purus tincidunt quam, in ' +
-        'aliquet arcu odio ut est. In hac habitasse platea dictumst. Sed nec purus sit amet lectus aliquet mollis.',
-    }
-]
-
-const studentData = [
-    { 
-        studentNumber: 'utm22030603', 
-        career: 'Information technologies area multiplatform software development', 
-        semester: 8, 
-        group: 'A', 
-        generalAverage: 9.7
-    }
-];
-
-const contact = [
-    { 
-        personalEmail: 'edithglz@gmail.com',
-        institutionalEmail: 'edithglz@utma.edu.mx',
-        phone: '449 510 34 20'
-    }
-];
-
-const personalData = [
-    {
-        gender: 'Female',
-        birthdate: 'September 04, 2003',
-        curp: 'GOLA030904MASNSMA0',
-        addresses: 'Francisco Toledo 158, Pintores Mexicanos, Aguascalientes, Aguascalientes'
-    }
-];
-
-const emergencyContact = [
-    {
-        name: 'Gonzalez Leos America Xochitl',
-        phone: '449 510 99 60'
-    }
-];
-
-{/*const students = [
-    { name: 'Juan Pérez', level: 'Primero', career: 'Ingeniería' },
-    { name: 'Ana García', level: 'Segundo', career: 'Medicina' },
-    { name: 'Luis Martínez', level: 'Tercero', career: 'Derecho' },
-    { name: 'María López', level: 'Cuarto', career: 'Arquitectura' },
-];*/}
+import { userData } from '../mocks/data.js';
 
 function Index() {
 
-    const [isOpenStudentData, setIsOpenStudentData] = useState(false);
+    const { 
+        porfile,
+        tutor,
+        extracurricularAct,
+        aboutStudent,
+        studentData,
+        contactData,
+        personalData,
+        emergencyContact
+    } = userData;
 
-    const [inputValueNumber, setInputValueNumber] = useState('');
-    const [inputValueCareer, setInputValueCareer] = useState('');
-    const [inputValueSemester, setInputValueSemester] = useState('');
-    const [inputValueGroup, setInputValueGroup] = useState('');
-    const [inputValueGeneralAverage, setInputValueGeneralAverage] = useState('');
-
-    const [studentNumber, setStudentNumber] = useState(studentData[0].studentNumber);
-    const [career, setCareer] = useState(studentData[0].career);
-    const [semester, setSemester] = useState(studentData[0].semester);
-    const [group, setGroup] = useState(studentData[0].group);
-    const [generalAverage, setGeneralAverage] = useState(studentData[0].generalAverage);
-
-    const handleNumberInputChange = (event) => {
-        setInputValueNumber(event.target.value);
-    };
-
-    const handleCareerInputChange = (event) => {
-        setInputValueCareer(event.target.value);
-    };
-
-    const handleSemesterInputChange = (event) => {
-        setInputValueSemester(event.target.value);
-    };
-
-    const handleGroupInputChange = (event) => {
-        setInputValueGroup(event.target.value);
-    };
-    
-    const handleGeneralAverageInputChange = (event) => {
-        setInputValueGeneralAverage(event.target.value);
-    };
-
-    const [isOpenContact, setIsOpenContact] = useState(false);
-    
-    const [inputValuePersonalEmail, setInputValuePersonalEmail] = useState('');
-    const [inputValueInstitutionalEmail, setInputValueInstitutionalEmail] = useState('');
-    const [InputValuePhoneContact, setInputValuePhoneContact] = useState('');
-
-    const [personalEmail, setPersonalEmail] = useState(contact[0].personalEmail);
-    const [institutionalEmail, setInstitutionalEmail] = useState(contact[0].institutionalEmail);
-    const [phoneContact, setPhoneContact] = useState(contact[0].phone);
-
-    const handlePersonalEmailInputChange = (event) => {
-        setInputValuePersonalEmail(event.target.value);
-    };
-
-    const handleInstitutionalEmailInputChange = (event) => {
-        setInputValueInstitutionalEmail(event.target.value);
-    };
-
-    const handlePhoneInputChange = (event) => {
-        setInputValuePhoneContact(event.target.value);
-    };
-
-    const [isOpenPersonalData, setIsOpenPersonalData] = useState(false);
-
-    const [inputValueGender, setinputValueGender] = useState('');
-    const [inputValueBirthdate, setinputValueBirthdate] = useState('');
-    const [inputValueCurp, setinputValueCurp] = useState('');
-    const [inputValueAddresses, setinputValueAddresses] = useState('');
-
-    const [gender, setGender] = useState(personalData[0].gender);
-    const [birthdate, setBirthdate] = useState(personalData[0].birthdate);
-    const [curp, setCurp] = useState(personalData[0].curp);
-    const [addresses, setAddresses] = useState(personalData[0].addresses);
-
-    const handleGenderInputChange = (event) => {
-        setinputValueGender(event.target.value);
-    };
-
-    const handleBirthdateInputChange = (event) => {
-        setinputValueBirthdate(event.target.value);
-    };
-
-    const handleCurpInputChange = (event) => {
-        setinputValueCurp(event.target.value);
-    };
-
-    const handleAddressesInputChange = (event) => {
-        setinputValueAddresses(event.target.value);
-    };
-
-    const [isOpenEmergencyContact, setIsOpenEmergencyContact] = useState(false);
-
-    const [inputValueName, setinputValueName] = useState('');
-    const [inputValuePhoneEmergencyContact, setinputValuePhoneEmergencyContact] = useState('');
-
-    const [name, setName] = useState(emergencyContact[0].name);
-    const [phoneEmergencyContact, setPhoneEmergencyContact] = useState(emergencyContact[0].phone);
-
-    const handleNameInputChange = (event) => {
-        setinputValueName(event.target.value);
-    };
-
-    const handlePhoneEmergencyContactInputChange = (event) => {
-        setinputValuePhoneEmergencyContact(event.target.value);
-    };  
-
-
-    const handleButtonClick = () => {
-        setStudentNumber(inputValueNumber);
-        setCareer(inputValueCareer);
-        setSemester(inputValueSemester);
-        setGroup(inputValueGroup);
-        setGeneralAverage(inputValueGeneralAverage);
-
-        setPersonalEmail(inputValuePersonalEmail);
-        setInstitutionalEmail(inputValueInstitutionalEmail);
-        setPhoneContact(InputValuePhoneContact);
-
-        setGender(inputValueGender);
-        setBirthdate(inputValueBirthdate);
-        setCurp(inputValueCurp);
-        setAddresses(inputValueAddresses);
-
-        setName(inputValueName);
-        setPhoneEmergencyContact(inputValuePhoneEmergencyContact);
-    };
-
-    function toggleButtonStudentData() {
-        setIsOpenStudentData(!isOpenStudentData);
-        if (!isOpenStudentData) {
-            setInputValueNumber(studentNumber);
-            setInputValueCareer(career);
-            setInputValueSemester(semester);
-            setInputValueGroup(group);
-            setInputValueGeneralAverage(generalAverage);
-        }
-    };
-
-    function toggleButtonContact() {
-        setIsOpenContact(!isOpenContact);
-        if (!isOpenContact) {
-            setInputValuePersonalEmail(personalEmail);
-            setInputValueInstitutionalEmail(institutionalEmail);
-            setInputValuePhoneContact(phoneContact);
-        }
-    }
-
-    function toggleButtonPersonalData() {
-        setIsOpenPersonalData(!isOpenPersonalData);
-        if (!isOpenPersonalData) {
-            setinputValueGender(gender);
-            setinputValueBirthdate(birthdate);
-            setinputValueCurp(curp);
-            setinputValueAddresses(addresses);
-        }
-    };
-
-    function toggleButtonEmergencyContact() {
-        setIsOpenEmergencyContact(!isOpenEmergencyContact);
-        if (!isOpenEmergencyContact) {
-            setinputValueName(name);
-            setinputValuePhoneEmergencyContact(phoneEmergencyContact);
-        }
-    };
-
-    const handleEditAll = () => {
-        toggleButtonEmergencyContact();
-        toggleButtonPersonalData();
-        toggleButtonContact();
-        toggleButtonStudentData();
-    }; 
+    console.log(userData);
 
     return (
         <>
+        {/*BODY */}
+
+        {/*BODY: JUMBOTRON */}
             <div>
                 <div className="jumbotron jumbotron-fluid" id="jumbotron">
                     <div className="container">
@@ -252,384 +29,195 @@ function Index() {
                                 <img
                                     src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1.webp"
                                     alt="avatar"
-                                    className="rounded-circle img-fluid"
-                                    style={{ width: '150px' }}
+                                    className="rounded-circle img-fluid avatar"                                    
                                 />
                             </div>
                             <div className="col-lg-8">
                                 <h1 className="display-4">
-                                    {userCard[0].name}
+                                    {porfile.name}
                                 </h1>
                                 <p className="lead">
-                                    Student of <b> {userCard[0].career} </b>
+                                    Student of <b> {porfile.career} </b>
                                 </p>
+                                <h1 className='credits'>
+                                    {porfile.credits}
+                                </h1>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="completeInformation">
+                {/* BODY: CONTENT */}
+                <div className="content">
                     <div>
                         <div className="row">
-                            <div className="col-lg-4">
-                                <div className="card mb-4" id="photoContainer1">
-                                    <div className="card-body text-center">
-                                        <img
-                                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
-                                            alt="avatar"
-                                            className="rounded-circle img-fluid"
-                                            style={{ width: '150px' }}
-                                        />
-                                        <h5 className="my-3">
-                                            {careerManager[0].name}
-                                        </h5>
-                                        <p className="text-muted mb-1" id="name-photoContainer1">
-                                            <b>{careerManager[0].charge}</b>
-                                        </p>
-                                        <p className="text-muted mb-4" id="link-people1">
-                                            {careerManager[0].email}
-                                        </p>
-                                    </div>
-                                </div>
 
-                                <div className="card mb-4" id="photoContainer2">
+                            {/* BODY: PHOTOCONTAINER */}
+                            <div className="col-lg-4">
+                                <div className="card mb-4">
                                     <div className="card-body text-center">
                                         <img
                                             src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2.webp"
                                             alt="avatar"
-                                            className="rounded-circle img-fluid"
-                                            style={{ width: '150px' }}
+                                            className="rounded-circle img-fluid tutor-avatar"                                            
                                         />
                                         <h5 className="my-3">
-                                            {tutor[0].name}
+                                            {tutor.name}
                                         </h5>
-                                        <p className="text-muted mb-1" id="name-photoContainer2">
-                                            <b>{tutor[0].charge}</b>
+                                        <p className="text-muted mb-1">
+                                            <b>{tutor.charge}</b>
                                         </p>
-                                        <p className="text-muted mb-4" id="link-people2">
-                                            {tutor[0].email}
+                                        <p className="text-muted mb-4">
+                                            {tutor.email}
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
+                            {/* BODY: CONTAINER INFORMATION */}
                             <div className="col-lg-8">
+
+                                <div className="card mb-4">
+                                    <div className="card-body">
+                                        {/* body: Extracurricular activity*/}
+                                        <h5 className="mb-4">Extracurricular activity </h5>
+                                        <div className='disposition'>
+                                            <div className='list'>
+                                                <div className='camp-space'><span className="camp-design">Activity</span></div>
+                                                <div className='camp-space'><span className="camp-design">Teacher</span></div>   
+                                                <div className='camp-space'><span className="camp-design">Teacher email</span></div>
+                                                <div className='camp-space'><span className="camp-design">Length</span></div> 
+                                                <div className='camp-space'><span className="camp-design">Schedule</span></div> 
+                                            </div>
+                                            <div className="list">                                            
+                                                <div className='camp-space'><span className='camp-text'>{extracurricularAct.name}</span></div>                                            
+                                                <div className='camp-space'><span className='camp-text'>{extracurricularAct.teacher}</span></div>                                            
+                                                <div className='camp-space'><span className='camp-text'>{extracurricularAct.email}</span></div>                                            
+                                                <div className='camp-space'><span className='camp-text'>{extracurricularAct.startedDate} - {extracurricularAct.finishedDate}</span></div>                                        
+                                                <div className='camp-space element-list text-muted mb-0 schedule-disposition'>
+                                                    <div className=''>
+                                                        <ul className="no-bullets">
+                                                            <li>Monday</li>
+                                                            <li>Tuesday</li>
+                                                            <li>Wednesday</li>
+                                                            <li>Thursday</li>
+                                                            <li>Friday</li>
+                                                            <li>Saturday</li>
+                                                            <li>Sunday</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <ul className="no-bullets">
+                                                            <li>{extracurricularAct.scheduleLunes}</li>
+                                                            <li>{extracurricularAct.scheduleMartes}</li>
+                                                            <li>{extracurricularAct.scheduleMiercoles}</li>
+                                                            <li>{extracurricularAct.scheduleJueves}</li>
+                                                            <li>{extracurricularAct.scheduleViernes}</li>
+                                                            <li>{extracurricularAct.scheduleSabado}</li>
+                                                            <li>{extracurricularAct.scheduleDomingo}</li>
+                                                        </ul>
+                                                    </div>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                {/* body: About the student*/}
                                 <div className="card mb-4">
                                     <div className="card-body">
                                         <h5 className="mb-4">About the student</h5>
                                         <p className="text-muted">
-                                            {about[0].text}
+                                            {aboutStudent.text}
                                         </p>
                                     </div>
                                 </div>
 
+                                {/* body: Student Data*/}
                                 <div className="card mb-4">
                                     <div className="card-body">
                                         <h5 className="mb-4">Student Data</h5>
-                                        <div className="list">
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <div>
-                                                    <h6 className="mb-2">Student number:</h6>
-                                                    {isOpenStudentData ? (
-                                                        <div>
-                                                            {/*<input className="form-control form-control-sm input-style" type="text" placeholder={studentData[0].studentNumber} style={{ width: '600px' }}/>*/}
-                                                           <input className="form-control form-control-sm input-style" type="text" value={inputValueNumber} onChange={handleNumberInputChange} style={{ width: '600px' }} />
-                                                        </div>
-                                                    ) : (
-                                                        <p className="element-list text-muted mb-0">
-                                                            {studentNumber}
-                                                        </p>
-                                                    )}
-                                                </div>
+                                        <div className='disposition'>
+                                            <div className='list'>
+                                                <div className='camp-space'><span className="camp-design">Student number</span></div>
+                                                <div className='camp-space'><span className="camp-design">Career</span></div>   
+                                                <div className='camp-space'><span className="camp-design">Semester</span></div>
+                                                <div className='camp-space'><span className="camp-design">Group</span></div> 
+                                                <div className='camp-space'><span className="camp-design">General Average</span></div>
+                                                
                                             </div>
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <div>
-                                                    <h6 className="mb-2">Career:</h6>
-                                                    {isOpenStudentData ? (
-                                                        <div>
-                                                            <input className="form-control form-control-sm input-style" type="text" value={inputValueCareer} onChange={handleCareerInputChange} style={{ width: '600px' }}/>
-                                                        </div>
-                                                    ) : (
-                                                        <p className="element-list text-muted mb-0">
-                                                            {career}
-                                                        </p>
-                                                    )}
-                                                </div>
-                                            </div>
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <div>
-                                                    <h6 className="mb-2">Semester:</h6>
-                                                    {isOpenStudentData ? (
-                                                        <div>
-                                                            <input className="form-control form-control-sm input-style" type="text" value={inputValueSemester} onChange={handleSemesterInputChange} style={{ width: '600px' }}/>
-                                                        </div>
-                                                    ) : (
-                                                        <p className="element-list text-muted mb-0">
-                                                            {semester}
-                                                        </p>
-                                                    )}
-                                                </div>
-                                            </div>
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <div>
-                                                    <h6 className="mb-2">Group:</h6>
-                                                    {isOpenStudentData ? (
-                                                        <div>
-                                                            <input className="form-control form-control-sm input-style" type="text" value={inputValueGroup} onChange={handleGroupInputChange} style={{ width: '600px' }}/>
-                                                        </div>
-                                                    ) : (
-                                                        <p className="element-list text-muted mb-0">
-                                                            {group}
-                                                        </p>
-                                                    )}
-                                                </div>
-                                            </div>
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <div>
-                                                    <h6 className="mb-2">General Average:</h6>
-                                                    {isOpenStudentData ? (
-                                                        <div>
-                                                            <input className="form-control form-control-sm input-style" type="text" value={inputValueGeneralAverage} onChange={handleGeneralAverageInputChange} style={{ width: '600px' }}/>
-                                                        </div>
-                                                    ) : (
-                                                        <p className="element-list text-muted mb-0">
-                                                            {generalAverage}
-                                                        </p>
-                                                    )}
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className='button' id='buttonStudentData'>
-                                            <button className="edit-button no-outline" onClick={toggleButtonStudentData}>
-                                                {isOpenStudentData ? (
-                                                    <button type="button" class="btn btn-light" id="buttonStudentData" onClick={handleButtonClick}>Save</button>
-                                                ) : (
-                                                    <img  src='../images/edit.png' alt='Edit' width='25px' height='25px' />
-                                                )}
-                                            </button>
-                                            {/*<button className="edit-button" onClick={togglePopup}> {/* onClick={handleClick} }
-                                                <img src='../images/edit.png' alt='Edit' width='25px' height='25px' />
-                                            </button>*/}
-                                            {/*<div id="popup" class="popup">
-                                                <div class="popup-content">
-                                                    <span id="closePopupBtn" class="close">&times;</span>
-                                                    <p>Hola</p>
-                                                </div>
-                                        </div>*/}
-                                        </div>
+                                            <div className="list">                                            
+                                                <div className='camp-space'><span className='camp-text'>{studentData.studentNumber}</span></div>                                            
+                                                <div className='camp-space'><span className='camp-text'>{studentData.career}</span></div>                                            
+                                                <div className='camp-space'><span className='camp-text'>{studentData.semester}</span></div>                                            
+                                                <div className='camp-space'><span className='camp-text'>{studentData.group}</span></div>  
+                                                <div className='camp-space'><span className='camp-text'>{studentData.generalAverage}</span></div>
+                                            </div>                               
+                                        </div>                                        
                                     </div>
                                 </div>
 
-                                <div className="card mb-4">
-                                    <div className="card-body">
-                                        <h5 className="mb-4">Contact</h5>
-                                        <div className="list">
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <div>
-                                                    <h6 className="mb-2">Personal email:</h6>
-                                                    {isOpenContact ? (
-                                                        <div>
-                                                            <input className="form-control form-control-sm input-style" type="text" value={inputValuePersonalEmail} onChange={handlePersonalEmailInputChange} style={{ width: '600px' }}/>
-                                                        </div>
-                                                    ) : (
-                                                        <p className="element-list text-muted mb-0">
-                                                            {personalEmail}
-                                                        </p>
-                                                    )}
-                                                </div>
-                                            </div>
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <div>
-                                                    <h6 className="mb-2">Institutional email:</h6>
-                                                    {isOpenContact ? (
-                                                        <div>
-                                                            <input className="form-control form-control-sm input-style" type="text" value={inputValueInstitutionalEmail} onChange={handleInstitutionalEmailInputChange} style={{ width: '600px' }}/>
-                                                        </div>
-                                                    ) : (
-                                                        <p className="element-list text-muted mb-0">
-                                                            {institutionalEmail}
-                                                        </p>
-                                                    )}
-                                                </div>
-                                            </div>
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <div>
-                                                    <h6 className="mb-2">Phone:</h6>
-                                                    {isOpenContact ? (
-                                                        <div>
-                                                            <input className="form-control form-control-sm input-style" type="text" value={InputValuePhoneContact} onChange={handlePhoneInputChange} style={{ width: '600px' }}/>
-                                                        </div>
-                                                    ) : (
-                                                        <p className="element-list text-muted mb-0">
-                                                            {phoneContact}
-                                                        </p>
-                                                    )}
-                                                </div>
-                                            </div>
-                                        </div>
-                                        {/*<div className='button' id='buttonContact'>
-                                            <button className="edit-button no-outline" onClick={toggleButtonContact}>
-                                                {isOpenContact ? (
-                                                    <button type="button" class="btn btn-light" id="buttonContact" onClick={handleButtonClick}>Save</button>
-                                                ) : (
-                                                    <img  src='../images/edit.png' alt='Edit' width='25px' height='25px' />
-                                                )}
-                                            </button>  
-                                        </div>*/}
-                                    </div>
-                                </div>
-
+                                {/* body: Personal Data*/}
                                 <div className="card mb-4">
                                     <div className="card-body">
                                         <h5 className="mb-4">Personal Data</h5>
-                                        <div className="list">
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <div>
-                                                    <h6 className="mb-2">Gender:</h6>
-                                                    {isOpenPersonalData ? (
-                                                        <div>
-                                                            <input class="form-control form-control-sm" type="text" value={inputValueGender} onChange={handleGenderInputChange} style={{ width: '600px' }}/>
-                                                        </div>
-                                                    ) : (
-                                                        <p className="element-list text-muted mb-0">
-                                                            {gender}
-                                                        </p>
-                                                    )}
-                                                </div>
+                                        <div className='disposition'>
+                                            <div className='list'>
+                                                <div className='camp-space'><span className="camp-design">Gender</span></div>
+                                                <div className='camp-space'><span className="camp-design">Birthdate</span></div>   
+                                                <div className='camp-space'><span className="camp-design">curp</span></div>
+                                                <div className='camp-space'><span className="camp-design">Address</span></div>
                                             </div>
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <div>
-                                                    <h6 className="mb-2">Birthdate:</h6>
-                                                    {isOpenPersonalData ? (
-                                                        <div>
-                                                            <input class="form-control form-control-sm" type="text" value={inputValueBirthdate} onChange={handleBirthdateInputChange} style={{ width: '600px' }}/>
-                                                        </div>
-                                                    ) : (
-                                                        <p className="element-list text-muted mb-0">
-                                                            {birthdate}
-                                                        </p>
-                                                    )}
-                                                </div>
+                                            <div className="list">                                            
+                                                <div className='camp-space'><span className='camp-text'>{personalData.gender}</span></div>                                            
+                                                <div className='camp-space'><span className='camp-text'>{personalData.birthdate}</span></div>                                            
+                                                <div className='camp-space'><span className='camp-text'>{personalData.curp}</span></div>
+                                                <div className='camp-space'><span className='camp-text'>{personalData.addresses}</span></div>                                            
+                                            </div>                               
+                                        </div> 
+                                    </div>
+                                </div>
+                                
+                                {/* body: Contact & Emergency Contact*/}
+                                <div className="card mb-4">
+                                    <div className="card-body">
+                                        <h5 className="mb-4">Contact</h5>
+                                        <div className='disposition'>
+                                            <div className='list'>
+                                                <div className='camp-space'><span className="camp-design">Personal email</span></div>
+                                                <div className='camp-space'><span className="camp-design">Institutional email</span></div>   
+                                                <div className='camp-space'><span className="camp-design">Phone</span></div>
                                             </div>
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <div>
-                                                    <h6 className="mb-2">CURP:</h6>
-                                                    {isOpenPersonalData ? (
-                                                        <div>
-                                                            <input class="form-control form-control-sm" type="text" value={inputValueCurp} onChange={handleCurpInputChange} style={{ width: '600px' }}/>
-                                                        </div>
-                                                    ) : (
-                                                        <p className="element-list text-muted mb-0">
-                                                            {curp}
-                                                        </p>
-                                                    )}
-                                                </div>
-                                            </div>
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <div>
-                                                    <h6 className="mb-2">Addresses:</h6>
-                                                    {isOpenPersonalData ? (
-                                                        <div>
-                                                            <input class="form-control form-control-sm" type="text" value={inputValueAddresses} onChange={handleAddressesInputChange} style={{ width: '600px' }}/>
-                                                        </div>
-                                                    ) : (
-                                                        <p className="element-list text-muted mb-0">
-                                                            {addresses}
-                                                        </p>
-                                                    )}
-                                                </div>
-                                            </div>
-                                        </div>
-                                        {/*<div className='button' id='buttonPersonalData'>
-                                            <button className="edit-button no-outline" onClick={toggleButtonPersonalData}>
-                                                {isOpenPersonalData ? (
-                                                    <button type="button" class="btn btn-light" id="buttonPersonalData" onClick={handleButtonClick}>Save</button>
-                                                ) : (
-                                                    <img  src='../images/edit.png' alt='Edit' width='25px' height='25px' />
-                                                )}
-                                            </button> 
-                                        </div>*/}
+                                            <div className="list">                                            
+                                                <div className='camp-space'><span className='camp-text'>{contactData.personalEmail}</span></div>                                            
+                                                <div className='camp-space'><span className='camp-text'>{contactData.institutionalEmail}</span></div>                                            
+                                                <div className='camp-space'><span className='camp-text'>{contactData.phone}</span></div>                                            
+                                            </div>                               
+                                        </div> 
                                     </div>
                                 </div>
 
+                                {/* body: Emergency Contact*/}
                                 <div className="card mb-4">
                                     <div className="card-body">
                                         <h5 className="mb-4">Emergency Contact</h5>
-                                        <div className="list">
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <div>
-                                                    <h6 className="mb-2">Nombre:</h6>
-                                                    {isOpenEmergencyContact ? (
-                                                        <div>
-                                                            <input class="form-control form-control-sm" type="text" value={inputValueName} onChange={handleNameInputChange} style={{ width: '600px' }}/>
-                                                        </div>
-                                                    ) : (
-                                                        <p className="element-list text-muted mb-0">
-                                                            {name}
-                                                        </p>
-                                                    )}
-                                                </div>
+                                        <div className='disposition'>
+                                            <div className='list'>
+                                                <div className='camp-space'><span className="camp-design">Nombre</span></div>
+                                                <div className='camp-space'><span className="camp-design">Numero</span></div>   
                                             </div>
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <div>
-                                                    <h6 className="mb-2">Numero:</h6>
-                                                    {isOpenEmergencyContact ? (
-                                                        <div>
-                                                            <input class="form-control form-control-sm" type="text" value={inputValuePhoneEmergencyContact} onChange={handlePhoneEmergencyContactInputChange} style={{ width: '600px' }}/>
-                                                        </div>
-                                                    ) : (
-                                                        <p className="element-list text-muted mb-0">
-                                                            {phoneEmergencyContact}
-                                                        </p>
-                                                    )}
-                                                </div>
-                                            </div>
-                                        </div>
-                                        {/*<div className='button' id='buttonEmergencyContact'>
-                                            <button className="edit-button no-outline" onClick={toggleButtonEmergencyContact}>
-                                                {isOpenEmergencyContact ? (
-                                                    <button type="button" class="btn btn-light" id="buttonEmergencyContact" onClick={handleButtonClick}>Save</button>
-                                                ) : (
-                                                    <img  src='../images/edit.png' alt='Edit' width='25px' height='25px' />
-                                                )}
-                                            </button> 
-                                        </div>*/}
+                                            <div className="list">                                            
+                                                <div className='camp-space'><span className='camp-text'>{emergencyContact.phone}</span></div>                                            
+                                                <div className='camp-space'><span className='camp-text'>{emergencyContact.name}</span></div>                                            
+                                            </div>                               
+                                        </div> 
                                     </div>
-                                    
-                                    
                                 </div>
-                                {/*<div className="card-body">
-                                    <div className='button buttonEmergencyContact buttonPersonalData buttonContact buttonStudentData'>
-                                        <button className="edit-button no-outline" onClick={handleEditAll}>
-                                            {isOpenEmergencyContact ? (
-                                                <button type="button" className="btn btn-light buttonEmergencyContact buttonPersonalData buttonContact buttonStudentData" onClick={handleEditAll}>Save</button>
-                                            ) : (
-                                                <button type="button" className="btn btn-light buttonEmergencyContact buttonPersonalData buttonContact buttonStudentData" onClick={handleEditAll}>Editar formulario</button>
-                                            )}
-                                        </button> 
-                                    </div>
-                                        </div>*/}
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        
-
-
-                {/* Uncomment and use this section if needed
-                <div className='row'>
-                    {students.map((student, index) => (
-                        <StudentCard
-                            key={index}
-                            name={student.name}
-                            level={student.level}
-                            career={student.career}
-                        />
-                    ))}
-                </div>
-                */}
-            
+            </div>     
         </>
     );
 }

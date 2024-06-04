@@ -1,11 +1,5 @@
 
-/**/
-
 /* HEADER */
-
-/*.navbar-custom {
-  background-color: #0084df !important;
-}*/
 
 #navbar {
   position: fixed;
@@ -67,10 +61,9 @@
 }
 
 
-
 /* BODY */
 
-/* JUMBOTRON */
+/* BODY: JUMBOTRON */
 #jumbotron {
   background-size: cover;
   background-position: center;
@@ -81,40 +74,90 @@
   text-align: center;
 }
 
-/* BODY */
-.completeInformation {
+.avatar {
+  width: 150px;
+}
+
+.credits {
+  font-size: 30px;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+/* BODY: CONTENT */
+.content {
   margin-left: 20px;
   margin-right: 20px;
 }
 
+/*BODY: PHOTOCONTAINER*/
+
+.tutor-avatar {
+  width: 150px;
+}
+
+/* BODY: CONTAINER INFORMATION */
+
 .list {
   margin-left: 30px;
+  font-size: 16px;
+}
+
+/* body: Extracurricular activity*/
+
+.camp-space{
+  margin-bottom: 3px;
+}
+
+#camp-space-schedule {
+  margin-top: 10px;
+}
+
+.camp-design {
+  outline: none;
+  font-weight:600;
+  margin-right: 15px;
+}
+
+.camp-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  font-weight:400;
+  margin-right: 15px;
+  color: #727272;
+}
+
+.schedule-disposition {
+  display: flex;
+  justify-content: space-between;
 }
 
 .element-list {
-  margin-top: -10px;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
-/* PHOTOCONTAINER */
-#name-fhotoContainer {
-  font-weight: bold;
+.no-bullets {
+  list-style-type: none;
 }
 
-#link-people {
-  margin-top: -10px;
-  color: black;
-  text-decoration: none;
-  font-size: 12px;
+.disposition {
+  display: flex;
 }
 
-.edit-button {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  background: transparent;
-  border: none;
+/* body: About the student*/
+/* body: Student Data*/
+/* body: Contact*/
+
+.contact {
+  font-size: 18px;
 }
+
+/* body: Personal Data*/
+/* body: Emergency Contact*/
+
+
 
 /* FOOTER */
 /* FOOTER */
@@ -161,10 +204,6 @@ footer {
   align-items: center; /* Añadir para alinear verticalmente */
 }
 
-.contact {
-  font-size: 18px;
-}
-
 .details {
   font-weight: bold;
 }
@@ -190,12 +229,6 @@ footer {
   margin-right: 5px;
 }
 
-
-
-
-
-/*student-card*/
-
 .student-card {
   display: flex;
   flex-direction: column;
@@ -212,18 +245,3 @@ footer {
 } 
 
 
-
-
-
-/*
-#input-style {
-  width: 600px !important;
-}*/
-
-.no-outline {
-  outline: none;
-}
-
-.no-outline:focus {
-  outline: none;
-}
