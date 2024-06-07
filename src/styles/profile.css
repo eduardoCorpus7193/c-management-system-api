@@ -1,0 +1,98 @@
+
+
+
+/* BODY */
+
+/* BODY: JUMBOTRON */
+#jumbotron {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.avatar {
+  width: 150px;
+}
+
+.credits {
+  font-size: 30px;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+/* BODY: CONTENT */
+.content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*BODY: PHOTOCONTAINER*/
+
+.tutor-avatar {
+  width: 150px;
+}
+
+/* BODY: CONTAINER INFORMATION */
+
+.list {
+  margin-left: 30px;
+  font-size: 16px;
+}
+
+/* body: Extracurricular activity*/
+
+.camp-space{
+  margin-bottom: 3px;
+}
+
+#camp-space-schedule {
+  margin-top: 10px;
+}
+
+.camp-design {
+  outline: none;
+  font-weight:600;
+  margin-right: 15px;
+}
+
+.camp-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  font-weight:400;
+  margin-right: 15px;
+  color: #727272;
+}
+
+.schedule-disposition {
+  display: flex;
+  justify-content: space-between;
+}
+
+.element-list {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+.disposition {
+  display: flex;
+}
+
+/* body: About the student*/
+/* body: Student Data*/
+
+/* body: Contact*/
+.contact {
+  font-size: 18px;
+}
+
+/* body: Personal Data*/
+/* body: Emergency Contact*/

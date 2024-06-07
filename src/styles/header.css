@@ -1,0 +1,61 @@
+/* HEADER */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    
+  }
+  
+  .logotype {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  
+  .logotype > a > div {
+    display: flex;
+    align-items: center;
+  }
+  
+  #logotype {
+    margin-left: 60px;
+    margin-right: 40px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }
+  
+  .nameLogotype {
+    font-family: "Hind Siliguri", sans-serif;
+    margin-left: 8px;
+  }
+  
+  .nameLogotype .utma {
+    font-size: 20px;
+  }
+  
+  .nameLogotype .slogan {
+    font-size: 15px;
+    margin-top: -8px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .baground {
+    background-color: #0068b4;
+  }
+  
+  #navbarNavDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+  }
+  
+  #logout {
+    color: rgb(199, 0, 57);
+    font-weight: bold;
+  }
+  

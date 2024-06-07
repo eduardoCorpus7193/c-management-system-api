@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { userData } from '../mocks/data.js';
 
-function Index() {
+function Profile() {
 
     const { 
         porfile,
@@ -222,4 +222,4 @@ function Index() {
     );
 }
 
-export default Index;
+export default Profile;

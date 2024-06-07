@@ -1,6 +1,6 @@
 import React from 'react'
 
-function footer() {
+function Footer() {
     return (
         <div className="footer-complet-contact">
           <div className="container">
@@ -76,4 +76,4 @@ function footer() {
     );
 }
 
-export default footer;
+export default Footer;
