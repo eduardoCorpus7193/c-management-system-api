@@ -31,7 +31,7 @@ export function Header() {
                                 <Link to="" className="dropdown-item">Theme</Link>
                                 <Link to="" className="dropdown-item">Notifications</Link>
                                 <Link to="" className="dropdown-item">Change password</Link>
-                                <Link to="/loguin" className="dropdown-item" id="logout">Log out</Link>
+                                <Link to="/login" className="dropdown-item" id="logout">Log out</Link>
                             </div>
                         </li>
                     </ul>
