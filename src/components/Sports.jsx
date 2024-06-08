@@ -1,7 +1,12 @@
-const sports = () => {
-  return (
-    <div>sports</div>
-  )
+import React, { useState } from 'react';
+
+function Sports() {
+
+    return (
+        <>
+        hola
+        </>
+    );
 }
 
-export default sports
+export default Sports;

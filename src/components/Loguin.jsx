@@ -1,7 +1,12 @@
-const loguin = () => {
-  return (
-    <div>loguin</div>
-  )
+import React, { useState } from 'react';
+
+function Loguin() {
+
+    return (
+        <>
+        hola
+        </>
+    );
 }
 
-export default loguin
+export default Loguin;
