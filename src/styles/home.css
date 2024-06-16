@@ -1,0 +1,100 @@
+/* BODY */
+
+/* BODY: JUMBOTRON */
+#jumbotron {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.color-welcome {
+    color: #212529 !important;
+    font-weight: 500; 
+}
+
+.alert-click {
+    cursor: pointer;
+}
+
+
+/* CONTENIDO BIENVENIDA */
+/*#container-offer {
+    background-color: #fbfbfb;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    
+}*/
+
+#jumbotron-offer {
+    background: linear-gradient(to bottom, white 10%, #fbfbfb 100%);
+}
+
+.title-offer {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.text-offer {
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.img-disposition {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+/* TALLERES CULTURALES */
+.courses-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+/* TALLERES CULTURALES: CARDS */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    
+}
+
+.cards-disposition {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card-disposition {
+    width: 18rem;
+}
+
+
+
+
+
+
+

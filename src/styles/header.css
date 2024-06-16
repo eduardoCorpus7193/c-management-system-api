@@ -58,4 +58,98 @@
     color: rgb(199, 0, 57);
     font-weight: bold;
   }
-  
+
+
+  /* ANIMACIONES DEL MENU */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 200px;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* MENU */
+.custom-divider {
+  border-top: 2px solid #e9ecef !important;
+}
+
+.title-section-menu {
+  font-size: 14px;
+  color: #333;
+  margin-left: -6px;
+}
+
+.status-button {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px;  
+}
+
+.status-disposition {
+  display: flex;
+  align-items: center;
+}
+
+#idioma {
+  margin-right: 21px;
+  width: 40px;
+}
+
+#them {
+  margin-right: 20px;
+  width: 41px;
+}
+
+#notification {
+  margin-right: 22px;
+  width: 37px;
+} 
+
+
+/* LINKS */
+.home:hover {
+  font-weight: 600;
+}
+
+.profile:hover {
+  font-weight: 600;
+}
+
+.configimg {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url('../../public/images/config.png') no-repeat center;
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+.configimg:hover {
+  background-image: url('../../public/images/configActive.png');
+}
+
+.configimg:focus {
+  outline: none;
+}

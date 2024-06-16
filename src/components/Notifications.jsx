@@ -1,6 +1,6 @@
 
 
-function Sports() {
+function Notifications() {
 
     return (
         <>
@@ -9,4 +9,4 @@ function Sports() {
     );
 }
 
-export default Sports;
+export default Notifications;
