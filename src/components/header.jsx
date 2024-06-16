@@ -31,7 +31,7 @@ export function Header() {
                 </a>
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
-                        <li className="nav-item"><Link to="/home" className="nav-link home">Home</Link></li>                        
+                        <li className="nav-item"><Link to="/" className="nav-link home">Home</Link></li>                        
                         <li className="nav-item"><Link to="/profile" className="nav-link profile">Profile</Link></li>
                         <li className="nav-item dropdown" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
                             <a className={`nav-link ${isDropdownOpen ? 'animate__animated animate__rotateIn' : ''}`} href="#!" id="navbarDropdownMenuLink" role="button">
@@ -48,7 +48,7 @@ export function Header() {
                                     <img className='status-button' id='them' src='/images/modoClaro.png' alt='Tema button' />
                                 </div>
                                 <div className='status-disposition'>
-                                    <Link to="" className="dropdown-item">Notificaciones</Link>
+                                    <Link to="/notifications" className="dropdown-item">Notificaciones</Link>
                                     <img className='status-button' id='notification' src='/images/botonVerde.png' alt='Notifications button' />
                                 </div>
                                 <div className="dropdown-divider custom-divider"></div>

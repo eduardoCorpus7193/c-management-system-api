@@ -1,0 +1,57 @@
+.jumbotron-disposition {
+ background-color: white;
+
+
+}
+
+.container {
+    padding-top: 30px;
+}
+
+.title-style {
+    font-weight: 400;
+} 
+
+ /* CARD */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card {
+    margin: 15px;
+    
+}
+
+.card-body {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.data-notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.title-notification-alert-style {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.date-time-notification {
+    font-size: 14px;
+    color: #6c757d;
+
+}
+
+.content-menssage-alert {
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    text-align: justify;
+}

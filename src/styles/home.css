@@ -20,6 +20,26 @@
     cursor: pointer;
 }
 
+.menssage-notification-alert {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menssage-alert {
+    margin-left: 5px;
+}
+
+.link-style {
+    color: #155724;
+    text-decoration: none;
+    margin-left: -12px;
+}
+
+
+
 
 /* CONTENIDO BIENVENIDA */
 /*#container-offer {

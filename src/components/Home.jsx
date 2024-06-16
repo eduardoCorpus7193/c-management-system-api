@@ -9,7 +9,9 @@ function Home() {
                     <div className="container">
 
                         <div class="alert alert-success text-left alert-dismissible fade show alert-click" role="alert">
-                            <strong>Hi Edith!</strong> You have a notification. <strong><Link to="/notifications" className="nav-link home">Click if you want to see your notifications.</Link></strong> 
+                            <div className='menssage-notification-alert'>
+                            <strong>Hi Edith!</strong><span className='menssage-alert'>You have a notification.</span> <strong><Link to="/notifications" className="nav-link link-style">Click if you want to see your notifications.</Link></strong> 
+                            </div>
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
