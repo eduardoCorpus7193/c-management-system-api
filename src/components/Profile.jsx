@@ -25,6 +25,7 @@ function Profile() {
                 <div className="jumbotron jumbotron-fluid" id="jumbotron">
                     <div className="container">
                         <div className="row">
+                            
                             <div className="col-lg-4">
                                 <img
                                     src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1.webp"
@@ -33,15 +34,21 @@ function Profile() {
                                 />
                             </div>
                             <div className="col-lg-8">
-                                <h1 className="display-4">
-                                    {porfile.name}
-                                </h1>
-                                <p className="lead">
-                                    Student of <b> {porfile.career} </b>
-                                </p>
-                                <h1 className='credits'>
-                                    {porfile.credits}
-                                </h1>
+                                <div>
+                                    <h1 className="display-4">
+                                        {porfile.name}
+                                    </h1>
+                                    <p className="lead">
+                                        Student of <b> {porfile.career} </b>
+                                    </p>
+                                    <h1 className='credits'>
+                                        {porfile.credits}
+                                    </h1>
+                                </div>
+                                <div>
+                                    <button type="button" className="btn btn-primary btn-lg" id='btn-style'>Descargar constancia</button>
+                                </div>
+                               
                             </div>
                         </div>
                     </div>
