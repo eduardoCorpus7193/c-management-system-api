@@ -1,4 +1,3 @@
-
 import { userData } from '../mocks/data.js';
 
 function Sports() {
@@ -21,22 +20,28 @@ function Sports() {
                             {/* BODY: CONTAINER INFORMATION */}
                             <div className="col-lg-8 container-info-disposition">
 
+                                {/* ABOUT THE STUDENT */}
                                 <div className="card mb-4">
                                     <div className="card-body">
-                                        {/* body: Extracurricular activity*/}
+                                        <h5 className="mb-4">About the activity</h5>
+                                        <p className="text-muted">
+                                            {aboutStudent.text}
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* EXTRACURRICULAR ACTIVITY */}
+                                <div className="card mb-4">
+                                    <div className="card-body">
                                         <h5 className="mb-4">Extracurricular activity </h5>
                                         <div className='disposition'>
                                             <div className='list'>
                                                 <div className='camp-space'><span className="camp-design">Activity</span></div>
-                                                <div className='camp-space'><span className="camp-design">Teacher</span></div>   
-                                                <div className='camp-space'><span className="camp-design">Teacher email</span></div>
                                                 <div className='camp-space'><span className="camp-design">Length</span></div> 
                                                 <div className='camp-space'><span className="camp-design">Schedule</span></div> 
                                             </div>
                                             <div className="list">                                            
-                                                <div className='camp-space'><span className='camp-text'>{extracurricularAct.name}</span></div>                                            
-                                                <div className='camp-space'><span className='camp-text'>{extracurricularAct.teacher}</span></div>                                            
-                                                <div className='camp-space'><span className='camp-text'>{extracurricularAct.email}</span></div>                                            
+                                                <div className='camp-space'><span className='camp-text'>{extracurricularAct.name}</span></div>                                              
                                                 <div className='camp-space'><span className='camp-text'>{extracurricularAct.startedDate} - {extracurricularAct.finishedDate}</span></div>                                        
                                                 <div className='camp-space element-list text-muted mb-0 schedule-disposition'>
                                                     <div className=''>
@@ -66,22 +71,10 @@ function Sports() {
                                         </div>
                                     </div>
                                 </div>
-                                
-                                {/* body: About the student*/}
-                                <div className="card mb-4">
-                                    <div className="card-body">
-                                        <h5 className="mb-4">About the student</h5>
-                                        <p className="text-muted">
-                                            {aboutStudent.text}
-                                        </p>
-                                    </div>
-                                </div>
-
-                                                             
-                               
+                                                        
                             </div>
 
-                            {/* BODY: PHOTOCONTAINER */}
+                            {/* PHOTO CONTAINER */}
                             <div className="col-lg-4">
                                 <div className="card mb-4">
                                     <div className="card-body text-center">
@@ -91,42 +84,25 @@ function Sports() {
                                             className="rounded-circle img-fluid tutor-avatar"                                            
                                         />
                                         <h5 className="my-3">
-                                            Fraygodofredo
+                                            Fray
                                         </h5>
-                                        <p className="text-muted mb-1">
-                                            <b>Tallerista</b>
-                                        </p>
-                                        <p className="text-muted mb-4">
-                                            fraygodofredo.perez@utma.edu.mx
-                                        </p>
                                     </div>
                                     <div>
                                         <hr />
                                     </div>
                                     <div>
-                                    <h5 className="mb-4">Student Data</h5>
+                                        {/* CONTACT */}
                                         <div className='disposition'>
                                             <div className='list'>
-                                                <div className='camp-space'><span className="camp-design">Student number</span></div>
-                                                <div className='camp-space'><span className="camp-design">Career</span></div>   
-                                                <div className='camp-space'><span className="camp-design">Semester</span></div>
-                                                <div className='camp-space'><span className="camp-design">Group</span></div> 
-                                                <div className='camp-space'><span className="camp-design">General Average</span></div>
-                                                
-                                            </div>
-                                            <div className="list">                                            
-                                                <div className='camp-space'><span className='camp-text'>{studentData.studentNumber}</span></div>                                            
-                                                <div className='camp-space'><span className='camp-text'>{studentData.career}</span></div>                                            
-                                                <div className='camp-space'><span className='camp-text'>{studentData.semester}</span></div>                                            
-                                                <div className='camp-space'><span className='camp-text'>{studentData.group}</span></div>  
-                                                <div className='camp-space'><span className='camp-text'>{studentData.generalAverage}</span></div>
-                                            </div>                               
+                                                <p className='camp-space camp-design'>Tallerista:</p>
+                                                <p className='camp-space camp-text'>Fraygodofredo Perez Domingues</p>
+                                                <p className='camp-space camp-design'>Email:</p>
+                                                <p className='camp-space camp-text'>fraygodofredo.perez@utma.edu.mx</p>
+                                            </div>                             
                                         </div>  
                                     </div>
                                 </div>
                             </div>
-
-
                             
                         </div>
                     </div>

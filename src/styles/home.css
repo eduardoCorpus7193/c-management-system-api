@@ -1,10 +1,10 @@
 /* BODY */
 
-/* BODY: JUMBOTRON */
+/* JUMBOTRON: Full screen background section with centered content */
 #jumbotron {
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 100vh; /* full viewport height */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@
 
 .color-welcome {
     color: #212529 !important;
-    font-weight: 500; 
+    font-weight: 500;
 }
 
 .alert-click {
@@ -38,50 +38,41 @@
     margin-left: -12px;
 }
 
-
-
-
-/* CONTENIDO BIENVENIDA */
-/*#container-offer {
-    background-color: #fbfbfb;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-    
-}*/
-
+/* BIENVENIDA: Welcome content section */
 #jumbotron-offer {
-    background: linear-gradient(to bottom, white 10%, #fbfbfb 100%);
+    background-color: white;
+}
+
+.offerd-description {
+    display: flex;
 }
 
 .title-offer {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     padding-top: 0px;
     padding-bottom: 30px;
+    text-align: right;
+   
 }
 
 .text-offer {
-    font-size: 20px;
+    font-size: 15px;
     padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
+    text-align: right;
 }
 
 .img-disposition {
     display: block;
     width: 300px;
     height: 300px;
-    margin: auto;
+    margin: auto; /* center image */
+    
 }
 
-/* TALLERES CULTURALES */
+/* TALLERES CULTURALES: Cultural workshops section */
 .courses-title {
     font-size: 30px;
     font-weight: bold;
@@ -92,10 +83,9 @@
 
 /* TALLERES CULTURALES: CARDS */
 .card {
-    border-radius: 10px;
+    border-radius: 10px; /* rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
-    
 }
 
 .cards-disposition {
@@ -110,7 +100,7 @@
 }
 
 .card-disposition {
-    width: 18rem;
+    width: 18rem; /* fixed width for cards */
 }
 
 #sports-container {
@@ -118,7 +108,7 @@
 }
 
 .btn-style {
-    background-color: #212529;
+    background-color: #212529; /* dark background color */
     color: white;
     border: none;
     border-radius: 5px;
@@ -127,8 +117,6 @@
     cursor: pointer;
 }
 
-
-
-
-
-
+.btn-style:hover {
+    background-color: #6c757d; /* darker background color */
+}

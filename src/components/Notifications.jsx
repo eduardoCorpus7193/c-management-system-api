@@ -1,27 +1,19 @@
-
-
 function Notifications() {
 
     return (
         <>
-
             <div className="content">
                 <div>
                     <div className="row">
-
-
-
-
-
-            {/*<div className="jumbotron jumbotron-fluid " id="jumbotron-offer">
-                    <div className="jumbotron-disposition">*/}
-
                         <div className="container">
+                            {/* CONTENEDOR PRINCIPAL */}
                             <div className="jumbotron" id="jumbotron-notifications">
-                                <h1 className="display-4 title-style">Notifications</h1>
-                                <p className="lead">Here are some notifications for you.</p>
+                                {/* ENCABEZADO */}
+                                <h1 className="display-4 title-style">Notificaciones</h1>
+                                <p className="lead">Tienes algunas notificaciones</p>
                             </div>
                             <div className="cards-container">
+                                {/* CONTENEDOR DE TARJETAS */}
                                 <div class="card">
                                     <div class="card-body">
                                         <div className="data-notification">
@@ -29,7 +21,8 @@ function Notifications() {
                                                 Inscripciones
                                             </div>
                                             <div className="date-time-notification">
-                                                {new Date().toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) + ' ' + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}  {/* ESTA PARTE DA LA FECHA Y HORA */}
+                                                {/* FECHA Y HORA ACTUAL */}
+                                                {new Date().toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) + ' ' + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                                             </div>
                                         </div>
                                         <div className="content-menssage-alert">
@@ -47,7 +40,8 @@ function Notifications() {
                                                 Inscripciones
                                             </div>
                                             <div className="date-time-notification">
-                                                {new Date().toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) + ' ' + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}  {/* ESTA PARTE DA LA FECHA Y HORA */}
+                                                {/* FECHA Y HORA ACTUAL */}
+                                                {new Date().toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) + ' ' + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                                             </div>
                                         </div>
                                         <div className="content-menssage-alert">
@@ -65,7 +59,8 @@ function Notifications() {
                                                 Inscripciones
                                             </div>
                                             <div className="date-time-notification">
-                                                {new Date().toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) + ' ' + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}  {/* ESTA PARTE DA LA FECHA Y HORA */}
+                                                {/* FECHA Y HORA ACTUAL */}
+                                                {new Date().toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) + ' ' + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                                             </div>
                                         </div>
                                         <div className="content-menssage-alert">
@@ -77,11 +72,6 @@ function Notifications() {
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
                     </div>
                 </div>
             </div>

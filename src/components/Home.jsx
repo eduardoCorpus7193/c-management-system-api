@@ -5,12 +5,14 @@ function Home() {
     return (
         <>
             <div>
+                {/*JUMBOTRON PRINCIPAL*/}
                 <div className="jumbotron jumbotron-fluid" id="jumbotron">
                     <div className="container">
 
+                        {/*success alert for notifications*/}
                         <div class="alert alert-success text-left alert-dismissible fade show alert-click" role="alert">
                             <div className='menssage-notification-alert'>
-                            <strong>Hi Edith!</strong><span className='menssage-alert'>You have a notification.</span> <strong><Link to="/notifications" className="nav-link link-style">Click if you want to see your notifications.</Link></strong> 
+                                <strong>Hola Edith!</strong><span className='menssage-alert'>Tienes una notificación.</span> <strong><Link to="/notifications" className="nav-link link-style"> Da click aqui para ver tus notificaciones.</Link></strong> 
                             </div>
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
@@ -20,7 +22,7 @@ function Home() {
                         <div className="row">
                             <div className="col-lg-4">
                                 <h1 className="display-4">
-                                    <span className="text-primary color-welcome">Welcome</span> to the <span className="text-primary color-welcome">PLACE</span> of <span className="text-primary color-welcome">OPPORTUNITIES</span>
+                                    <span className="text-primary color-welcome">Bienvenido </span> al <span className="text-primary color-welcome">lugar</span> de las <span className="text-primary color-welcome">oportunidades</span>
                                 </h1>
                                 <p className="lead">Universidad Tecnológica Metropolitana</p>
                             </div>
@@ -28,44 +30,39 @@ function Home() {
                     </div>
                 </div>
 
-                {/*<div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
-                    <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <img src="https://via.placeholder.com/800x300" className="d-block w-100" alt="..." />
-                        </div>
-                        <div className="carousel-item">
-                            <img src="https://via.placeholder.com/800x400" className="d-block w-100" alt="..." />
-                        </div>
-                        <div className="carousel-item">
-                            <img src="https://via.placeholder.com/800x200" className="d-block w-100" alt="..." />
-                        </div>
-                    </div>
-                </div>*/}
-
+                {/*JUMBOTRON OFERTA*/}
                 <div className="jumbotron jumbotron-fluid" id="jumbotron-offer">
                     <div>
                         <div className="container">
                             <div className="row">
-                                <div className="col-lg-12">
-                                    <h2 className="text-center title-offer">What we offer?</h2>
-                                    <p className="text-center text-offer">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis incidunt ratione ipsa minima explicabo accusamus eveniet debitis consequuntur, odit corrupti tenetur aspernatur ab laboriosam voluptatibus? Sed totam excepturi ullam fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam facere esse vero, exercitationem iusto laborum earum corporis repellendus, est culpa libero ab animi porro deserunt quibusdam at voluptas voluptates illum.
-                                    </p>
-                                    <img src="/images/designer.jpeg" className="img-fluid img-disposition" alt="" />
+                                <div className="offerd-description">
+                                    <div className='col-lg-6'>
+                                        <img src="/images/designer.png" className="img-fluid img-disposition" alt="" />
+                                    </div>
+                                    <div className='col-lg-6'>
+                                        <h2 className="title-offer">¿Que te ofrece la Universidad Metropolitana?</h2>
+                                        <p className="text-offer">
+                                            {/* placeholder text for offer description */}
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis incidunt ratione ipsa minima explicabo accusamus eveniet debitis consequuntur. <br/>
+                                            Omnis incidunt ratione ipsa minima explicabo accusamus eveniet debitis consequuntur.
+                                        </p>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                    
-               <div>
+
+                {/*TALLERES CULTURALES*/}
+                <div>
                     <div className="container">
                         <div>
                             <h2 className="text-center courses-title">TALLERES CULTURALES</h2>
                         </div>
 
                         <div className="row">
-
+                            {/* cultural workshop cards */}
                             <div className="col-lg-4 cards-disposition">
                                 <div className="card card-disposition">
                                     <img src="https://via.placeholder.com/150" className="card-img-top" alt="..." />
@@ -116,19 +113,18 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
-                            
-
                         </div>
                     </div>
                 </div>
 
+                {/*TALLERES DEPORTIVOS*/}
                 <div>
                     <div className="container" id='sports-container'>
                         <div>
                             <h2 className="text-center courses-title">TALLERES DEPORTIVOS</h2>
                         </div>
                         <div className="row">
-
+                            {/* sports workshop cards */}
                             <div className="col-lg-4 cards-disposition">
                                 <div className="card card-disposition">
                                     <img src="https://via.placeholder.com/150" className="card-img-top" alt="..." />
@@ -179,12 +175,9 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
-                            
-
                         </div>
                     </div>
                 </div>
-
             </div>
         </>
     );

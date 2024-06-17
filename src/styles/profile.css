@@ -1,9 +1,4 @@
-
-
-
-/* BODY */
-
-/* BODY: JUMBOTRON */
+/* ESTILOS PARA JUMBOTRON */
 #jumbotron {
   background-size: cover;
   background-position: center;
@@ -14,18 +9,20 @@
   text-align: center;
 }
 
+/* ESTILOS PARA AVATAR */
 .avatar {
   width: 150px;
 }
 
+/* ESTILOS PARA CRÉDITOS */
 .credits {
   font-size: 30px;
   margin-top: 0px;
   font-weight: bold;
 }
 
+/* ESTILOS PARA BOTÓN */
 #btn-style {
-
   background-color: #212529;
   color: white;
   border: none;
@@ -33,42 +30,39 @@
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-
-    position: absolute;
-    margin-top: 150px;
-    right: -50px;
+  position: absolute;
+  margin-top: 150px;
+  right: -50px;
 }
 
 #btn-style:hover {
-  background-color: #0069d9;
+  background-color: #6c757d;
 }
 
-/* BODY: CONTENT */
+/* ESTILOS PARA CONTENIDO */
 .content {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/*BODY: PHOTOCONTAINER*/
-
+/* ESTILOS PARA TUTOR AVATAR */
 .tutor-avatar {
   width: 150px;
 }
 
-/* BODY: CONTAINER INFORMATION */
-
+/* ESTILOS PARA LISTAS */
 .list {
   margin-left: 30px;
   font-size: 16px;
 }
 
+/* ESTILOS PARA DISPOSICIÓN DE INFORMACIÓN */
 .container-info-disposition {
   margin-bottom: 50px;
 }
 
-/* body: Extracurricular activity*/
-
-.camp-space{
+/* ESTILOS PARA ESPACIADO DE CAMPOS */
+.camp-space {
   margin-bottom: 3px;
 }
 
@@ -76,46 +70,46 @@
   margin-top: 10px;
 }
 
+/* ESTILOS PARA DISEÑO DE CAMPOS */
 .camp-design {
   outline: none;
-  font-weight:600;
+  font-weight: 600;
   margin-right: 15px;
 }
 
+/* ESTILOS PARA TEXTO DE CAMPOS */
 .camp-text {
   margin-top: 10px;
   margin-bottom: 10px;
   outline: none;
-  font-weight:400;
+  font-weight: 400;
   margin-right: 15px;
   color: #727272;
 }
 
+/* ESTILOS PARA DISPOSICIÓN DE HORARIOS */
 .schedule-disposition {
   display: flex;
   justify-content: space-between;
 }
 
+/* ESTILOS PARA LISTA DE ELEMENTOS */
 .element-list {
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
+/* ESTILOS PARA LISTAS SIN VIÑETAS */
 .no-bullets {
   list-style-type: none;
 }
 
+/* ESTILOS PARA DISPOSICIÓN */
 .disposition {
   display: flex;
 }
 
-/* body: About the student*/
-/* body: Student Data*/
-
-/* body: Contact*/
+/* ESTILOS PARA CONTACTO */
 .contact {
   font-size: 18px;
 }
-
-/* body: Personal Data*/
-/* body: Emergency Contact*/

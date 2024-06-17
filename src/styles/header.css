@@ -1,93 +1,93 @@
 /* HEADER */
 
 #navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    
-  }
-  
-  .logotype {
-    display: flex;
-    align-items: center;
-    margin-top: 7px;
-    margin-bottom: 7px;
-  }
-  
-  .logotype > a > div {
-    display: flex;
-    align-items: center;
-  }
-  
-  #logotype {
-    margin-left: 60px;
-    margin-right: 40px;
-    margin-top: -5px;
-    margin-bottom: -5px;
-  }
-  
-  .nameLogotype {
-    font-family: "Hind Siliguri", sans-serif;
-    margin-left: 8px;
-  }
-  
-  .nameLogotype .utma {
-    font-size: 20px;
-  }
-  
-  .nameLogotype .slogan {
-    font-size: 15px;
-    margin-top: -8px;
-    font-weight: bold;
-    font-family: "Playfair Display", serif;
-  }
-  
-  .baground {
-    background-color: #0068b4;
-  }
-  
-  #navbarNavDropdown {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 40px;
-  }
-  
-  #logout {
-    color: rgb(199, 0, 57);
-    font-weight: bold;
-  }
+  position: fixed;  /* Fixed positioning for the navbar */
+  top: 0;
+  width: 100%;
+  z-index: 100;  /* Ensure it's above other content */
+}
+
+.logotype {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.logotype > a > div {
+  display: flex;
+  align-items: center;
+}
+
+#logotype {
+  margin-left: 60px;
+  margin-right: 40px;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.nameLogotype {
+  font-family: "Hind Siliguri", sans-serif;
+  margin-left: 8px;
+}
+
+.nameLogotype .utma {
+  font-size: 20px;
+}
+
+.nameLogotype .slogan {
+  font-size: 15px;
+  margin-top: -8px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+}
+
+.baground {
+  background-color: #0068b4;  /* Background color */
+}
+
+#navbarNavDropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+
+#logout {
+  color: rgb(199, 0, 57);  /* Logout link color */
+  font-weight: bold;
+}
 
 
-  /* ANIMACIONES DEL MENU */
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    width: 200px;
+/* ANIMATIONS FOR THE MENU */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 200px;
 }
 
 .dropdown-menu.show {
-    display: block;
+  display: block;  /* Show dropdown menu */
 }
 
 .dropdown-item {
-    padding: 10px 20px;
-    color: #333;
-    text-decoration: none;
-    display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  display: block;
 }
 
 .dropdown-item:hover {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;  /* Hover background color */
 }
 
-/* MENU */
+
+/* MENU STYLES */
 .custom-divider {
-  border-top: 2px solid #e9ecef !important;
+  border-top: 2px solid #e9ecef !important;  /* Custom divider styling */
 }
 
 .title-section-menu {
@@ -100,7 +100,7 @@
   background-color: #fff;
   border: none;
   outline: none;
-  padding: 10px;  
+  padding: 10px;
 }
 
 .status-disposition {
@@ -121,16 +121,16 @@
 #notification {
   margin-right: 22px;
   width: 37px;
-} 
+}
 
 
-/* LINKS */
+/* LINK STYLES */
 .home:hover {
-  font-weight: 600;
+  font-weight: 600;  /* Hover style for home link */
 }
 
 .profile:hover {
-  font-weight: 600;
+  font-weight: 600;  /* Hover style for profile link */
 }
 
 .configimg {
@@ -147,9 +147,9 @@
 }
 
 .configimg:hover {
-  background-image: url('../../public/images/configActive.png');
+  background-image: url('../../public/images/configActive.png');  /* Active state for config icon */
 }
 
 .configimg:focus {
-  outline: none;
+  outline: none;  /* Remove focus outline */
 }

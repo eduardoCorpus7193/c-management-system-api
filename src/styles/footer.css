@@ -1,86 +1,86 @@
-
-/* FOOTER */
 .footer-tree {
-    background-color: rgba(233, 236, 239, 1);
-    color: #333333;
-  }
-  
-  footer {
-    margin-top: 100px;
-  }
-  
-  .utma-footer {
-    width: 30px;
-    height: 30px;
-    opacity: 0.9;
-    margin-right: 20px;
-  }
-  
-  .footer-complet {
-    background-color: rgb(233, 236, 239);
-    width: 100%;
-    height: auto;
-  }
-  
-  .line {
-    border-top: 1px solid rgb(9, 72, 76);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: -50px;
-    margin-right: -50px;
-  }
-  
-  .footer-complet-contact {
-    background-color: rgb(233, 236, 239);
-    margin-bottom: 0px;
-    padding-top: 30px;
-  }
-  
-  .footer-information {
-    display: flex;
-    justify-content: space-around; /* Añadir para distribución equitativa de elementos */
-    align-items: center; /* Añadir para alinear verticalmente */
-  }
-  
-  .details {
-    font-weight: bold;
-  }
-  
-  .redes {
-    display: flex;
-    padding-left: -100px;
-    padding-right: -100px;
-    padding-bottom: 25px;
-  }
-  
-  .distance-row {
-    margin-left: 0px;
-  
-  }
-  
-  .distans {
-    margin-right: 150px;
-    margin-top: 39px;
-  }
-  
-  .contact-disposition {
-    margin-right: 5px;
-  }
-  
-  .student-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  } 
-  
-  
-  
+  background-color: rgba(233, 236, 239, 1);
+  color: #333333;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+.utma-footer {
+  width: 30px;
+  height: 30px;
+  opacity: 0.9;
+  margin-right: 20px;
+}
+
+.footer-complet {
+  background-color: rgb(233, 236, 239);
+  width: 100%;
+  height: auto;
+}
+
+.line {
+  border-top: 1px solid rgb(9, 72, 76);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: -50px;
+  margin-right: -50px;
+  /* adds a line with specific margins */
+}
+
+.footer-complet-contact {
+  background-color: rgb(233, 236, 239);
+  margin-bottom: 0px;
+  padding-top: 30px;
+  /* footer contact section with padding at the top */
+}
+
+.footer-information {
+  display: flex;
+  justify-content: space-around; /* distribute elements evenly */
+  align-items: center; /* center elements vertically */
+  /* main footer information section with flexbox layout */
+}
+
+.details {
+  font-weight: bold;
+}
+
+.redes {
+  display: flex;
+  padding-left: -100px;
+  padding-right: -100px;
+  padding-bottom: 25px;
+  /* social media icons section with padding adjustments */
+}
+
+.distance-row {
+  margin-left: 0px;
+}
+
+.distans {
+  margin-right: 150px;
+  margin-top: 39px;
+}
+
+.contact-disposition {
+  margin-right: 5px;
+}
+
+.student-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  /* card styling for students with hover effects and rounded corners */
+} 
+

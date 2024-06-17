@@ -1,8 +1,10 @@
+/* ESTILOS PARA CONTENIDO GENERAL */
 .content {
     margin-left: 20px;
     margin-right: 20px;
 }
 
+/* ESTILOS PARA JUMBOTRON DE NOTIFICACIONES */
 #jumbotron-notifications {
     background-color: white;
     margin-top: 25px;
@@ -10,21 +12,22 @@
     margin-left: -10px;
 }
 
+/* ESTILOS PARA JUMBOTRON DE DISPOSICIÓN */
 .jumbotron-disposition {
- background-color: white;
-
-
+    background-color: white;
 }
 
+/* ESTILOS PARA CONTENEDOR PRINCIPAL */
 .container {
     padding-top: 30px;
 }
 
+/* ESTILOS PARA TÍTULOS */
 .title-style {
     font-weight: 400;
 } 
 
- /* CARD */
+/* ESTILOS PARA TARJETAS */
 .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +37,6 @@
 
 .card {
     margin: 15px;
-    
 }
 
 .card-body {
@@ -43,24 +45,26 @@
     margin-right: 20px;
 }
 
+/* ESTILOS PARA DATOS DE NOTIFICACIÓN */
 .data-notification {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
+/* ESTILOS PARA TÍTULO DE NOTIFICACIÓN */
 .title-notification-alert-style {
     font-weight: 600;
     font-size: 20px;
 }
 
+/* ESTILOS PARA FECHA Y HORA DE NOTIFICACIÓN */
 .date-time-notification {
     font-size: 14px;
     color: #6c757d;
-
 }
 
+/* ESTILOS PARA CONTENIDO DE MENSAJE DE ALERTA */
 .content-menssage-alert {
     margin-top: 20px;
     margin-right: 100px;

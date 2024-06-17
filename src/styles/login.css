@@ -1,28 +1,31 @@
+/* ESTILOS PARA AVATAR */
 .avatar-style {
   border: none;
 }
 
+/* ESTILOS PARA BOTÓN DE INICIO DE SESIÓN */
 .btn-login-style {
   background-color: #212529;
-  color: white;
+  color: white; 
   border: none;
   border-radius: 10px;
-  padding: 10px;
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  padding: 10px; 
+  width: 100%; 
+  margin-top: 10px; 
+  margin-bottom: 30px; 
 }
 
 .btn-login-style:hover {
   background-color: #797c81;
-  color: white;
-  font-weight: bold;
+  color: white; 
+  font-weight: bold; 
   border: none;
 }
 
+/* ESTILOS PARA ENLACE DE CREACIÓN DE CUENTA */
 .create-account-style {
-  color: #212529;
-  font-weight: bold;
+  color: #212529; 
+  font-weight: bold; 
   text-align: center;
   margin-top: 10px;
   text-decoration: none;
@@ -31,77 +34,3 @@
 .create-account-style:hover {
   color: #0056b3;
 }
-
-
-/*.container {  
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.inputs-position {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-}
-
-.disposition-input-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  
-  align-items: center;
-  height: 65px;
-  width: 250px;
-  background-color: #212529;
-  border: 1px solid gray;
-  border-radius: 10px;
-  padding: 10px;
-  box-sizing: border-box;
-  
-}
-
-.disposition-inputs {
-  background-color: transparent;
-  border: none;
-  color: white;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  
-  
-}
-
-.disposition-inputs:focus,
-.disposition-inputs:active {
-  width: 240px;
-  height: -20px;
- 
-  background-color: #212529;
-  box-shadow: none;
-  color: white;
-  caret-color: white;
-}
-.floating-text {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  transition: top 0.3s ease, transform 0.3s ease, font-size 0.3s ease;
-  color: gray;
-  pointer-events: none;
-  
-}
-
-.disposition-inputs:focus + .floating-text,
-.disposition-inputs:not(:placeholder-shown) + .floating-text {
-  top: 0.5px;
-  transform: translateY(-10%);
-  font-size: 14px;
-  color: gray;
-  
-}*/

@@ -1,4 +1,3 @@
-
 import { userData } from '../mocks/data.js';
 
 function Profile() {
@@ -18,14 +17,14 @@ function Profile() {
 
     return (
         <>
-        {/*BODY */}
-
-        {/*BODY: JUMBOTRON */}
+        {/* BODY */}
+            {/* BODY: JUMBOTRON */}
             <div>
                 <div className="jumbotron jumbotron-fluid" id="jumbotron">
                     <div className="container">
                         <div className="row">
                             
+                            {/* LEFT COLUMN */}
                             <div className="col-lg-4">
                                 <img
                                     src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1.webp"
@@ -33,16 +32,17 @@ function Profile() {
                                     className="rounded-circle img-fluid avatar"                                    
                                 />
                             </div>
+                            {/* RIGHT COLUMN */}
                             <div className="col-lg-8">
                                 <div>
                                     <h1 className="display-4">
                                         {porfile.name}
                                     </h1>
                                     <p className="lead">
-                                        Student of <b> {porfile.career} </b>
+                                        Estudiante de <b> Desarrollo de software multiplataforma. </b>
                                     </p>
                                     <h1 className='credits'>
-                                        {porfile.credits}
+                                        Creditos: 40
                                     </h1>
                                 </div>
                                 <div>
@@ -59,7 +59,7 @@ function Profile() {
                     <div>
                         <div className="row">
 
-                            {/* BODY: PHOTOCONTAINER */}
+                            {/* LEFT COLUMN (PHOTO CONTAINER) */}
                             <div className="col-lg-4">
                                 <div className="card mb-4">
                                     <div className="card-body text-center">
@@ -81,20 +81,20 @@ function Profile() {
                                 </div>
                             </div>
 
-                            {/* BODY: CONTAINER INFORMATION */}
+                            {/* RIGHT COLUMN (CONTAINER INFORMATION) */}
                             <div className="col-lg-8 container-info-disposition">
 
                                 <div className="card mb-4">
                                     <div className="card-body">
-                                        {/* body: Extracurricular activity*/}
-                                        <h5 className="mb-4">Extracurricular activity </h5>
+                                        {/* BODY: EXTRACURRICULAR ACTIVITY */}
+                                        <h5 className="mb-4"> Actividad extracurricular </h5>
                                         <div className='disposition'>
                                             <div className='list'>
-                                                <div className='camp-space'><span className="camp-design">Activity</span></div>
-                                                <div className='camp-space'><span className="camp-design">Teacher</span></div>   
-                                                <div className='camp-space'><span className="camp-design">Teacher email</span></div>
-                                                <div className='camp-space'><span className="camp-design">Length</span></div> 
-                                                <div className='camp-space'><span className="camp-design">Schedule</span></div> 
+                                                <div className='camp-space'><span className="camp-design">Actividad</span></div>
+                                                <div className='camp-space'><span className="camp-design">Tallerista</span></div>   
+                                                <div className='camp-space'><span className="camp-design">Email de tallerista</span></div>
+                                                <div className='camp-space'><span className="camp-design">Duración</span></div> 
+                                                <div className='camp-space'><span className="camp-design">Horario</span></div> 
                                             </div>
                                             <div className="list">                                            
                                                 <div className='camp-space'><span className='camp-text'>{extracurricularAct.name}</span></div>                                            
@@ -130,73 +130,68 @@ function Profile() {
                                     </div>
                                 </div>
                                 
-                                {/* body: About the student*/}
+                                {/* BODY: ABOUT THE STUDENT */}
                                 <div className="card mb-4">
                                     <div className="card-body">
-                                        <h5 className="mb-4">About the student</h5>
+                                        <h5 className="mb-4">Sobre el estudiante</h5>
                                         <p className="text-muted">
                                             {aboutStudent.text}
                                         </p>
                                     </div>
                                 </div>
 
-                                {/* body: Student Data*/}
+                                {/* BODY: STUDENT DATA */}
                                 <div className="card mb-4">
                                     <div className="card-body">
-                                        <h5 className="mb-4">Student Data</h5>
+                                        <h5 className="mb-4">Datos escolares</h5>
                                         <div className='disposition'>
                                             <div className='list'>
-                                                <div className='camp-space'><span className="camp-design">Student number</span></div>
-                                                <div className='camp-space'><span className="camp-design">Career</span></div>   
-                                                <div className='camp-space'><span className="camp-design">Semester</span></div>
-                                                <div className='camp-space'><span className="camp-design">Group</span></div> 
-                                                <div className='camp-space'><span className="camp-design">General Average</span></div>
-                                                
+                                                <div className='camp-space'><span className="camp-design">Matrícula</span></div>
+                                                <div className='camp-space'><span className="camp-design">Carrera</span></div>   
+                                                <div className='camp-space'><span className="camp-design">Cuatrimestre</span></div>
+                                                <div className='camp-space'><span className="camp-design">Grupo</span></div>                                                 
                                             </div>
                                             <div className="list">                                            
                                                 <div className='camp-space'><span className='camp-text'>{studentData.studentNumber}</span></div>                                            
-                                                <div className='camp-space'><span className='camp-text'>{studentData.career}</span></div>                                            
+                                                <div className='camp-space'><span className='camp-text'>Tecnologías de la informacion area desarrollo de software multiplataforma.</span></div>                                            
                                                 <div className='camp-space'><span className='camp-text'>{studentData.semester}</span></div>                                            
                                                 <div className='camp-space'><span className='camp-text'>{studentData.group}</span></div>  
-                                                <div className='camp-space'><span className='camp-text'>{studentData.generalAverage}</span></div>
                                             </div>                               
                                         </div>                                        
                                     </div>
                                 </div>
 
-                                {/* body: Personal Data*/}
+                                {/* BODY: PERSONAL DATA */}
                                 <div className="card mb-4">
                                     <div className="card-body">
-                                        <h5 className="mb-4">Personal Data</h5>
+                                        <h5 className="mb-4">Datos personales</h5>
                                         <div className='disposition'>
                                             <div className='list'>
-                                                <div className='camp-space'><span className="camp-design">Gender</span></div>
-                                                <div className='camp-space'><span className="camp-design">Birthdate</span></div>   
-                                                <div className='camp-space'><span className="camp-design">curp</span></div>
-                                                <div className='camp-space'><span className="camp-design">Address</span></div>
+                                                <div className='camp-space'><span className="camp-design">Género</span></div>
+                                                <div className='camp-space'><span className="camp-design">Fecha de nacimiento</span></div>   
+                                                <div className='camp-space'><span className="camp-design">CURP</span></div>
+                                                <div className='camp-space'><span className="camp-design">Dirección</span></div>
                                             </div>
                                             <div className="list">                                            
-                                                <div className='camp-space'><span className='camp-text'>{personalData.gender}</span></div>                                            
-                                                <div className='camp-space'><span className='camp-text'>{personalData.birthdate}</span></div>                                            
+                                                <div className='camp-space'><span className='camp-text'>Femenino</span></div>                                            
+                                                <div className='camp-space'><span className='camp-text'>Septiembre 04, 2003</span></div>                                            
                                                 <div className='camp-space'><span className='camp-text'>{personalData.curp}</span></div>
-                                                <div className='camp-space'><span className='camp-text'>{personalData.addresses}</span></div>                                            
+                                                <div className='camp-space'><span className='camp-text'>Francisco Toledo 158, Pintores Mexicanos, Ags, Ags</span></div>                                            
                                             </div>                               
                                         </div> 
                                     </div>
                                 </div>
                                 
-                                {/* body: Contact & Emergency Contact*/}
+                                {/* BODY: CONTACT & EMERGENCY CONTACT */}
                                 <div className="card mb-4">
                                     <div className="card-body">
-                                        <h5 className="mb-4">Contact</h5>
+                                        <h5 className="mb-4">Contacto</h5>
                                         <div className='disposition'>
                                             <div className='list'>
-                                                <div className='camp-space'><span className="camp-design">Personal email</span></div>
-                                                <div className='camp-space'><span className="camp-design">Institutional email</span></div>   
-                                                <div className='camp-space'><span className="camp-design">Phone</span></div>
+                                                <div className='camp-space'><span className="camp-design">Email institucional</span></div>   
+                                                <div className='camp-space'><span className="camp-design">Numero telefonico</span></div>
                                             </div>
                                             <div className="list">                                            
-                                                <div className='camp-space'><span className='camp-text'>{contactData.personalEmail}</span></div>                                            
                                                 <div className='camp-space'><span className='camp-text'>{contactData.institutionalEmail}</span></div>                                            
                                                 <div className='camp-space'><span className='camp-text'>{contactData.phone}</span></div>                                            
                                             </div>                               
@@ -207,15 +202,15 @@ function Profile() {
                                 {/* body: Emergency Contact*/}
                                 <div className="card mb-4">
                                     <div className="card-body">
-                                        <h5 className="mb-4">Emergency Contact</h5>
+                                        <h5 className="mb-4">Contacto de emergencia</h5>
                                         <div className='disposition'>
                                             <div className='list'>
                                                 <div className='camp-space'><span className="camp-design">Nombre</span></div>
-                                                <div className='camp-space'><span className="camp-design">Numero</span></div>   
+                                                <div className='camp-space'><span className="camp-design">Numero telefonico</span></div>   
                                             </div>
                                             <div className="list">                                            
-                                                <div className='camp-space'><span className='camp-text'>{emergencyContact.phone}</span></div>                                            
                                                 <div className='camp-space'><span className='camp-text'>{emergencyContact.name}</span></div>                                            
+                                                <div className='camp-space'><span className='camp-text'>{emergencyContact.phone}</span></div>                                            
                                             </div>                               
                                         </div> 
                                     </div>
