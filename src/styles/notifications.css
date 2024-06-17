@@ -1,3 +1,15 @@
+.content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#jumbotron-notifications {
+    background-color: white;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: -10px;
+}
+
 .jumbotron-disposition {
  background-color: white;
 
@@ -17,7 +29,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    margin-bottom: 100px;
 }
 
 .card {

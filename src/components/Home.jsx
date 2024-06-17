@@ -63,6 +63,7 @@ function Home() {
                         <div>
                             <h2 className="text-center courses-title">TALLERES CULTURALES</h2>
                         </div>
+
                         <div className="row">
 
                             <div className="col-lg-4 cards-disposition">
@@ -122,7 +123,7 @@ function Home() {
                 </div>
 
                 <div>
-                    <div className="container">
+                    <div className="container" id='sports-container'>
                         <div>
                             <h2 className="text-center courses-title">TALLERES DEPORTIVOS</h2>
                         </div>

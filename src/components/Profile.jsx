@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import { userData } from '../mocks/data.js';
 
 function Profile() {
@@ -75,7 +75,7 @@ function Profile() {
                             </div>
 
                             {/* BODY: CONTAINER INFORMATION */}
-                            <div className="col-lg-8">
+                            <div className="col-lg-8 container-info-disposition">
 
                                 <div className="card mb-4">
                                     <div className="card-body">

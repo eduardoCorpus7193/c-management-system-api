@@ -4,12 +4,23 @@ function Notifications() {
 
     return (
         <>
-            <div className="jumbotron jumbotron-fluid " id="jumbotron-offer">
-                    <div className="jumbotron-disposition">
+
+            <div className="content">
+                <div>
+                    <div className="row">
+
+
+
+
+
+            {/*<div className="jumbotron jumbotron-fluid " id="jumbotron-offer">
+                    <div className="jumbotron-disposition">*/}
+
                         <div className="container">
-                            <h1 className="display-4 title-style">Notifications</h1>
-                            <p className="lead">Here are some notifications for you.</p>
-                            
+                            <div className="jumbotron" id="jumbotron-notifications">
+                                <h1 className="display-4 title-style">Notifications</h1>
+                                <p className="lead">Here are some notifications for you.</p>
+                            </div>
                             <div className="cards-container">
                                 <div class="card">
                                     <div class="card-body">
@@ -65,10 +76,15 @@ function Notifications() {
                                     </div>
                                 </div>
                             </div>
-
                         </div>
+
+
+
+
+
                     </div>
                 </div>
+            </div>
         </>
     );
 }

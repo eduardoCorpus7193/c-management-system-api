@@ -50,22 +50,22 @@ function Footer() {
               </div>
               <ul className="nav col-md-6 justify-content-end list-unstyled d-flex">
                 <li>
-                  <a href="https://utma.edu.mx" target="_blank" rel="noreferrer">
+                  <a href="https://utma.edu.mx" target="_blank">
                     <img className="utma-footer" src="images/utmaLogotype.png" alt="UTMA" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/UTMABiS/?locale=es_LA" target="blank">
+                  <a href="https://www.facebook.com/UTMABiS/?locale=es_LA" target="_blank">
                     <img className="utma-footer" src="images/facebook.png" alt="Facebook" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.tiktok.com/@utmetropolitana" target="blank">
+                  <a href="https://www.tiktok.com/@utmetropolitana" target="_blank">
                     <img className="utma-footer" src="images/tik.png" alt="TikTok" />
                   </a>
                 </li>
                 <li>
-                  <a href="#!" target="_blank">
+                  <a href="#" target="_blank">
                     <img className="utma-footer" src="images/whatsapp.png" alt="WhatsApp" />
                   </a>
                 </li>
